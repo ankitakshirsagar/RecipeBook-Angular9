@@ -1,0 +1,76 @@
+[debug] [2020-07-19T16:35:41.198Z] ----------------------------------------------------------------------
+[debug] [2020-07-19T16:35:41.212Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-07-19T16:35:41.214Z] CLI Version:   8.6.0
+[debug] [2020-07-19T16:35:41.214Z] Platform:      win32
+[debug] [2020-07-19T16:35:41.214Z] Node Version:  v12.17.0
+[debug] [2020-07-19T16:35:41.218Z] Time:          Sun Jul 19 2020 22:05:41 GMT+0530 (India Standard Time)
+[debug] [2020-07-19T16:35:41.220Z] ----------------------------------------------------------------------
+[debug] [2020-07-19T16:35:41.221Z] 
+[debug] [2020-07-19T16:35:41.258Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-19T16:35:41.259Z] > authorizing via signed-in user
+[debug] [2020-07-19T16:35:41.260Z] [iam] checking project recipebook-69f35 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-07-19T16:35:41.276Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/recipebook-69f35:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-07-19T16:35:42.893Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 19 Jul 2020 16:35:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1137","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-19T16:35:42.903Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/recipebook-69f35  
+ 
+[debug] [2020-07-19T16:35:43.325Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 19 Jul 2020 16:35:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'recipebook-69f35'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-07-19T16:35:43.344Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/recipebook-69f35/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-07-19T16:35:46.063Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 19 Jul 2020 16:35:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[recipebook-69f35]: beginning deploy... 
+[info] i  hosting[recipebook-69f35]: found 21 files in dist/Project 
+[debug] [2020-07-19T16:35:46.119Z] [hosting] hash cache [ZGlzdFxQcm9qZWN0] not populated
+[debug] [2020-07-19T16:35:46.397Z] [hosting] hash cache [ZGlzdFxQcm9qZWN0] stored for 21 files
+[debug] [2020-07-19T16:35:46.399Z] [hosting][hash queue][FINAL] {"max":236,"min":136,"avg":157.8095238095238,"active":0,"complete":21,"success":21,"errored":0,"retried":0,"total":21,"elapsed":277}
+[debug] [2020-07-19T16:35:46.400Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/recipebook-69f35/versions/86601d316a0e7f1f:populateFiles  
+ <request body omitted>
+[debug] [2020-07-19T16:35:48.140Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 19 Jul 2020 16:35:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-19T16:35:48.203Z] [hosting][populate queue][FINAL] {"max":1755,"min":1755,"avg":1755,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1811}
+[debug] [2020-07-19T16:35:48.204Z] [hosting] uploads queued: 21
+[debug] [2020-07-19T16:36:18.926Z] [uploadQueue] Retrying task 3e7c89812bf4fd87f9db14f54068690ed64b8be5e64316c9703f9616bef0b00e
+[debug] [2020-07-19T16:36:21.239Z] [hosting][upload queue][FINAL] {"max":7588,"min":1906,"avg":3008.6190476190477,"active":0,"complete":21,"success":21,"errored":0,"retried":1,"total":21,"elapsed":33097}
+[info] +  hosting[recipebook-69f35]: file upload complete 
+[debug] [2020-07-19T16:36:21.243Z] [hosting] deploy completed after 35176ms
+[debug] [2020-07-19T16:36:21.413Z] [
+  {
+    "config": {
+      "public": "dist/Project",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "recipebook-69f35"
+    },
+    "site": "recipebook-69f35",
+    "version": "sites/recipebook-69f35/versions/86601d316a0e7f1f"
+  }
+]
+[info] i  hosting[recipebook-69f35]: finalizing version... 
+[debug] [2020-07-19T16:36:21.417Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/recipebook-69f35/versions/86601d316a0e7f1f?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-07-19T16:36:27.507Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 19 Jul 2020 16:36:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-19T16:36:27.508Z] [hosting] finalized version for recipebook-69f35: {"name":"sites/recipebook-69f35/versions/86601d316a0e7f1f","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2020-07-19T16:35:43.103059Z","createUser":{"email":"amk.ankita556@gmail.com"},"finalizeTime":"2020-07-19T16:36:25.299337Z","finalizeUser":{"email":"amk.ankita556@gmail.com"}}
+[info] +  hosting[recipebook-69f35]: version finalized 
+[info] i  hosting[recipebook-69f35]: releasing new version... 
+[debug] [2020-07-19T16:36:27.515Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/recipebook-69f35/releases?version_name=sites/recipebook-69f35/versions/86601d316a0e7f1f  
+ {"message":null}
+[debug] [2020-07-19T16:36:29.499Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 19 Jul 2020 16:36:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-19T16:36:29.500Z] [hosting] release: {"name":"sites/recipebook-69f35/releases/1595176587292530","version":{"name":"sites/recipebook-69f35/versions/86601d316a0e7f1f","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}},"type":"DEPLOY","releaseTime":"2020-07-19T16:36:27Z"}
+[info] +  hosting[recipebook-69f35]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/recipebook-69f35/overview
+[info] Hosting URL: https://recipebook-69f35.web.app
